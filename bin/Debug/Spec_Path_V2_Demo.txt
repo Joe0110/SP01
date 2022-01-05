@@ -1,0 +1,9 @@
+d:\ECU_TEST
+c:\Joe\ECU_TEST
+d:\ECU_TEST_work
+c:\Joe\ECU_TEST_work
+d:\ECU_TEST_Export
+c:\Joe\ECU_TEST_Export
+C:\Program Files (x86)\Acute\LA\LA.exe
+ECU_VV_20210407_t5
+125

@@ -1,0 +1,5 @@
+d:\ECU_TEST								<-- 主要路徑
+c:\Joe\ECU_TEST							<-- 次要路徑
+C:\Program Files (x86)\Acute\LA\LA.exe	<-- Acute_LA路徑
+ECU_CO_20200804_t10						<-- 預設開啟Spec
+112										<-- 預設開啟Spec總頁數

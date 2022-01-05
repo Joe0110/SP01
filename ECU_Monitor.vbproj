@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3640CDE2-1DC9-47FE-9B40-58CF85734B9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Spec_chk.My.MyApplication</StartupObject>
+    <RootNamespace>Spec_chk</RootNamespace>
+    <AssemblyName>Spec_chk</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\VB_Release\001\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Spec_chk.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Spec_chk.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A7A581B572F290775AA903B6AB4F969983863A37</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsApplication1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>0110_Studio11.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.vb" />
+    <Compile Include="Form_Capture.Designer.vb">
+      <DependentUpon>Form_Capture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Capture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Color.Designer.vb">
+      <DependentUpon>Form_Color.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Color.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MaskCopy.Designer.vb">
+      <DependentUpon>Form_MaskCopy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MaskCopy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Move.Designer.vb">
+      <DependentUpon>Form_Move.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Move.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Note.Designer.vb">
+      <DependentUpon>Form_Note.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Note.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Path.Designer.vb">
+      <DependentUpon>Form_Path.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Path.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Report.designer.vb">
+      <DependentUpon>Form_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SetX_List.Designer.vb">
+      <DependentUpon>Form_SetX_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SetX_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Spec.Designer.vb">
+      <DependentUpon>Form_Spec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Spec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Spec_All_Pc.Designer.vb">
+      <DependentUpon>Form_Spec_All_Pc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Spec_All_Pc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Spec_CHK_Bottom.Designer.vb">
+      <DependentUpon>Form_Spec_CHK_Bottom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Spec_CHK_Bottom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Spec_CHK_Ctl.Designer.vb">
+      <DependentUpon>Form_Spec_CHK_Ctl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Spec_CHK_Ctl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Spec_CHK_Top.Designer.vb">
+      <DependentUpon>Form_Spec_CHK_Top.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Spec_CHK_Top.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_status.Designer.vb">
+      <DependentUpon>Form_status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Total_Items.designer.vb">
+      <DependentUpon>Form_Total_Items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Total_Items.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log.vb" />
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form_Capture.resx">
+      <DependentUpon>Form_Capture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Color.resx">
+      <DependentUpon>Form_Color.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MaskCopy.resx">
+      <DependentUpon>Form_MaskCopy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Move.resx">
+      <DependentUpon>Form_Move.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Note.resx">
+      <DependentUpon>Form_Note.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Path.resx">
+      <DependentUpon>Form_Path.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Report.resx">
+      <DependentUpon>Form_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SetX_List.resx">
+      <DependentUpon>Form_SetX_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Spec.resx">
+      <DependentUpon>Form_Spec.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Spec_All_Pc.resx">
+      <DependentUpon>Form_Spec_All_Pc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Spec_CHK_Bottom.resx">
+      <DependentUpon>Form_Spec_CHK_Bottom.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Spec_CHK_Ctl.resx">
+      <DependentUpon>Form_Spec_CHK_Ctl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Spec_CHK_Top.resx">
+      <DependentUpon>Form_Spec_CHK_Top.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_status.resx">
+      <DependentUpon>Form_status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Total_Items.resx">
+      <DependentUpon>Form_Total_Items.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="WindowsApplication1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="0110_studio.ico" />
+    <Content Include="0110_Studio11.ico" />
+    <Content Include="0110_Studio20.ico" />
+    <Content Include="0110_Studio8.ico" />
+    <Content Include="0110_Studio_x08b.ico" />
+    <Content Include="trac.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
